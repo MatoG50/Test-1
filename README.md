@@ -1,1 +1,3 @@
-Test 1
+# Test 1
+
+This is a training module.
