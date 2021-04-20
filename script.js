@@ -66,4 +66,23 @@ buttonRandom.addEventListener('click', function () {
 
 // 3.
 
-// alert(divBy2);
+// const divBy2 = [2,4,6...]
+
+const tableContainer = document.querySelector('.table-numbers');
+const row = document.querySelector('.row');
+
+const displayNumbers = function (num) {
+  row.innerHTML = '';
+
+  num.forEach(function (num, i) {
+    const html = `
+    <tr class="row">
+    <td>${i + 1}</td>
+    <td>${num}</td>
+    </tr>`;
+
+    tableContainer.insertAdjacentHTML('beforeend', html);
+  });
+};
+
+displayNumbers(divBy2);
