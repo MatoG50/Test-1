@@ -61,7 +61,7 @@ buttonRandom.addEventListener('click', function () {
   for (let i = 0; i < 7; i++) {
     randomName.push(alphabet[Math.floor(Math.random() * alphabet.length)]);
   }
-  console.log(randomName.join(''));
+  alert(randomName.join(''));
 });
 
 // 3.
